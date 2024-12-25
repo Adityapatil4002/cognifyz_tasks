@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Photo Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img class="thumbnail" src="./auto-2179220_1280.jpg" alt="Image 1">
+                <p class="caption">Vehicles</p>
+            </div>
+            <div class="gallery-item">
+                <img class="thumbnail" src="./house-409451_1280.jpg" alt="Image 2">
+                <p class="caption">Real Estate</p>
+            </div>
+            <div class="gallery-item">
+                <img class="thumbnail" src="./nature-7720825_1280.jpg" alt="Image 3">
+                <p class="caption">Nature</p>
+            </div>
+            <div class="gallery-item">
+                <img class="thumbnail" src="./ural-owl-8418249_1280.jpg" alt="Image 4">
+                <p class="caption">Birds</p>
+            </div>
+            <div class="gallery-item">
+                <img class="thumbnail" src="./watch-7433126_1280.jpg" alt="Image 5">
+                <p class="caption">Luxury Watches</p>
+            </div>
+            <div class="gallery-item">
+                <img class="thumbnail" src="./wolf-8089783_1280.jpg" alt="Image 6">
+                <p class="caption">Animals</p>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <span class="close-btn" onclick="closeImage()">×</span>
+            <div class="overlay-content">
+                <img class="enlarged-image" id="enlargedImage" src="" alt="Enlarged Image">
+                <p id="image-caption" class="overlay-caption"></p>
+                <div class="overlay-controls">
+                    <button class="prev-btn" onclick="navigateImage(-1)">&#10094;</button>
+                    <button class="next-btn" onclick="navigateImage(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

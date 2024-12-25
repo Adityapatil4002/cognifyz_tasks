@@ -1,0 +1,48 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container to center the button */
+  .container {
+    text-align: center;
+  }
+  
+  /* Style for the button */
+  #colorButton {
+    background-color: #0077b6; /* Initial color */
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  /* Hover effect */
+  #colorButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #00b4d8;
+  }
+  
+  /* Active click effect */
+  #colorButton:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button text */
+  #colorButton {
+    text-transform: uppercase;
+  }
+  

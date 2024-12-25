@@ -1,0 +1,82 @@
+/* Intro Section */
+.intro {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.intro-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+/* Highlights Section */
+.highlights {
+    background: #f4f6f9;
+    padding: 40px 20px;
+}
+
+.highlights-grid .highlight-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.highlights-grid .highlight-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Skills Section */
+.skills-carousel {
+    display: flex;
+    overflow: auto;
+    gap: 20px;
+    padding: 40px 20px;
+    scroll-behavior: smooth;
+}
+
+.skills-carousel .skill-item {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Testimonials Section */
+.testimonials-carousel {
+    display: flex;
+    overflow: auto;
+    gap: 20px;
+    padding: 40px 20px;
+    scroll-behavior: smooth;
+}
+
+/* Contact Section */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid with Bootstrap & Animations</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font for a nice style -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Add some custom styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #03161f;
+    }
+
+    .card {
+      margin: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+      color: #133455;
+    }
+
+    .container h2{
+        color: white;
+    }
+
+    .card-body {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .row {
+      justify-content: center;
+    }
+
+    .card-content {
+      color: #7f8c8d;
+      font-size: 14px;
+    }
+
+    /* Animation for fading in cards */
+    .fade-in {
+      opacity: 0;
+      animation: fadeInAnimation 1s forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Make it responsive for all screen sizes */
+    @media (max-width: 576px) {
+      .card {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2 class="text-center my-5">Responsive Grid</h2>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card fade-in">
+          <img src="./aston _martin.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Aston Martin</h5>
+            <p class="card-content">Aston Martin, a whispered promise of luxury and speed,
+                crafting exquisite cars that seduce the senses.
+                Elegance, refinement, and raw power.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card fade-in">
+          <img src="./audi.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Audi</h5>
+            <p class="card-content">Audi, a symphony of innovation and design,
+                pushing boundaries with cutting-edge technology.
+                Luxury, comfort, and dynamic performance.
+                
+                </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card fade-in">
+          <img src="./bmw-6236203_1280.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">BMW</h5>
+            <p class="card-content">BMW
+                BMW, a fusion of power and sophistication,
+                delivering thrilling drives with precision engineering.
+                Unleashing the ultimate driving machine.
+                </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card fade-in">
+          <img src="./jaguar-car-1713094_1280.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Jaguar</h5>
+            <p class="card-content">Jaguar, where power meets poise,
+                effortless performance, timeless style.
+                Wild at heart, refined on road.
+                Unleashing the art of performance.
+                </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card fade-in">
+          <img src="./lamborghini-gallardo-5795135_1280.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Lamborghini</h5>
+            <p class="card-content">Lamborghini, a raging bull of speed and passion,
+                forging extreme machines that defy convention.
+                Adrenaline, innovation, and Italian flair.
+                </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card fade-in">
+          <img src="./porsche.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Porsche</h5>
+            <p class="card-content">Porsche, a legendary marque of speed and style,
+                crafting iconic cars that stir the soul.
+                Performance, elegance, and adrenaline.
+                </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

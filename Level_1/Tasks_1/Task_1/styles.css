@@ -1,0 +1,91 @@
+/* General styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e3f2fd; /* Light blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Styling the container */
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  border: 2px solid #90caf9; /* Blue border */
+}
+
+/* Styling for the heading */
+h1 {
+  color: #0d47a1; /* Dark blue heading */
+}
+
+/* Styling for the paragraph */
+p {
+  color: #1565c0; /* Medium blue text */
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Styling for the main image */
+img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 2px solid #90caf9; /* Blue border for images */
+}
+
+/* Card styling */
+.card {
+  background-color: #ffffff;
+  border: 2px solid #90caf9; /* Blue border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #0d47a1; /* Dark blue title */
+  margin: 0 0 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #1565c0; /* Medium blue text */
+  margin: 0 0 15px;
+}
+
+.card-button {
+  display: inline-block;
+  background-color: #1e88e5; /* Bright blue button */
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.card-button:hover {
+  background-color: #1565c0; /* Darker blue on hover */
+}

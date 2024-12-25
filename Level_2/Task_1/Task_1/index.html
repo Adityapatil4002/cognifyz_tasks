@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card with Bulma</title>
+  <!-- Bulma CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+  <style>
+    /* Dark teal background color for the entire page */
+    body {
+      background-color: #033746; /* Dark Teal color */
+    }
+
+    /* Center the section to fill the entire viewport */
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full viewport height */
+    }
+
+    /* Adjust the card to fit the image correctly */
+    .card-image img {
+      object-fit: cover; /* Ensures the image covers the area */
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Center the card inside its container */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-mobile is-multiline is-centered">
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./rolls-royce-4388174_1280.jpg" alt="Rolls Royce">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Rolls Royce</p>
+                  <p class="subtitle is-6">Luxury</p>
+                </div>
+              </div>
+              <div class="content">
+                Rolls-Royce, a symbol of luxury and elegance, crafting exceptional vehicles with precision and excellence. 
+                With sleek designs and powerful engines, they redefine the driving experience.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
